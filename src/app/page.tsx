@@ -16,7 +16,7 @@ export default function Home() {
            px-3 py-2 border-2 rounded-full 
            bg-green-500 border-green-400 
            hover:bg-green-200 hover:border-green-400 hover:text-green-800">Back</a>
-        <iframe src='https://my.spline.design/keyboard-9df2ae81a4477008e78bb9389260d5bb/' frameborder='0' style={{ width: '100vw', height: '100vh', border: 'none' }}></iframe>
+        <iframe src='https://my.spline.design/keyboard-9df2ae81a4477008e78bb9389260d5bb/' style={{ width: '100vw', height: '100vh', border: 'none' }}></iframe>
       </section>
     </main>
   );
