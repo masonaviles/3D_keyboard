@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Interactive Keyboard Viewer
 
-## Getting Started
+This is a modern 3D interactive keyboard viewer built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Spline](https://spline.design/). It's lightweight, responsive, and designed to run smoothly with zero backend setup.
 
-First, run the development server:
+## 📸 Live Preview
+
+Visit: [https://gitaddmason.dev](https://gitaddmason.dev)
+
+## 🚀 Features
+
+- 🌐 Built with Next.js 14
+- 🎨 Styled with Tailwind CSS 3
+- 🎮 3D interactive keyboard via Spline iframe
+- 💬 In-app instructions + external link button
+- 📱 Fully responsive layout
+- 🧪 ESLint config with Next.js core-web-vitals rules
+- 🧵 Font optimization via `next/font`
+
+## 🛠️ Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/keyboard.git
+cd keyboard
+npm install
+```
+
+Then run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+public/
+  next.svg            # Default Next.js logo
+  vercel.svg          # Vercel logo
 
-## Learn More
+src/
+  app/
+    layout.tsx        # Root layout with Inter font
+    globals.css       # Tailwind CSS globals + dark mode vars
+    page.tsx          # Main app entry with iframe embed
 
-To learn more about Next.js, take a look at the following resources:
+.eslintrc.json        # Linting rules
+.gitignore            # Git ignores
+next.config.mjs       # Next.js config
+postcss.config.mjs    # PostCSS setup for Tailwind
+tailwind.config.ts    # Tailwind theme + content paths
+tsconfig.json         # TypeScript config
+package.json          # Scripts + dependencies
+README.md             # You are here
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Embedded Spline Scene
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The keyboard animation is loaded via Spline:
 
-## Deploy on Vercel
+```tsx
+<iframe
+  src="https://my.spline.design/keyboard-9df2ae81a4477008e78bb9389260d5bb/"
+  style={{ width: '100vw', height: '100vh', border: 'none' }}
+></iframe>
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Try:
+- Pressing number keys
+- Clicking and dragging to rotate the view
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📦 Dependencies
+
+```json
+"next": "14.2.3",
+"react": "^18",
+"react-dom": "^18",
+"tailwindcss": "^3.4.1",
+"typescript": "^5"
+```
+
+## 🧹 Linting
+
+Run lint checks with:
+
+```bash
+npm run lint
+```
+
+## 🖥 Deployment
+
+The app is production-ready and easily deployable to [Vercel](https://vercel.com), Netlify, or any static host.
+
+## 📄 License
+
+MIT — free to use, modify, and distribute.
+
+---
+
+Built with 💚 by [Mason Aviles](https://gitaddmason.dev)
